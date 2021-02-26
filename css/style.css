@@ -1,3 +1,34 @@
-.test{
-    background-color: bisque;
+/* COMMON */
+
+img {
+    height: 100%;
+}
+
+/* HEADER */
+
+/* Header Common */
+
+.nav-top {
+    padding: 20px 0;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* logo */
+
+.logo img {
+    height: 15px;
+}
+
+/* Nav Right */
+
+.nav-right {
+    text-align: right;
 }
