@@ -1,5 +1,9 @@
 /* COMMON */
 
+body {
+    font-family: Open Sans, Segoe UI, Tahoma, sans-serif;
+}
+
 img {
     height: 100%;
 }
@@ -9,7 +13,8 @@ img {
 }
 
 .block-center {
-    position: absolute; /* il genitore deve aver position:relative */
+    position: absolute;
+    /* il genitore deve aver position:relative */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -20,16 +25,16 @@ img {
 /* Header Common */
 
 .nav-top {
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 
 header ul {
     list-style: none;
-    text-transform: uppercase ;
+    text-transform: uppercase;
 }
 
 header ul li {
-    display: inline-block;  
+    display: inline-block;
 }
 
 header ul li a {
@@ -41,32 +46,40 @@ header ul li:first-child {
     margin-left: 10px;
 }
 
-
 /* logo */
 
 .logo img {
-    height: 15px;
+    height: 18px;
 }
+
+/* Nav Right */
 
 /* Nav List */
 
 .nav-right {
     text-align: right;
+    padding-bottom: 10px;
 }
 
-.nav-list ul li {
+.nav-list ul li, .languages ul li {
     padding-left: 10px;
+    font-size: 13px;
 }
 
 /* Languages */
 
 .languages ul li {
-    padding-left: 10px;
     border-left: 1px solid black;
 }
 
-.languages ul li:first-child{
+.languages ul li:first-child {
     border-left: none;
+}
+
+/* Burger Menu */
+
+.burger-menu{
+font-size: 18px;
 }
 
 /* Jumbotron */
@@ -81,10 +94,52 @@ header ul li:first-child {
     text-align: center;
 }
 
-.jumbotron .title{
+.jumbotron .title {
     width: 70%;
 }
 
 .title img {
     display: inline-block;
+    }
+
+.jumbotron h1 {
+    font-size: 50px;
+}
+
+.jumbotron h2 {
+    padding: 18px 0;
+    font-size: 15px;
+}
+
+/* md */
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .jumbotron h1 {
+        font-size: 35px;
+    }
+    
+    .jumbotron h2 {
+        padding: 15px 0;
+        font-size: 13px;
+    } 
+
+    .logo img {
+        height: 15px;
+    }
+}
+
+/* xs */
+
+@media all and (max-width: 767px) {
+    .jumbotron h1 {
+        font-size: 30px;
+    }
+    
+    .jumbotron h2 {
+        padding: 15px 0;
+        font-size: 12px;
+    } 
+
+    .logo img {
+        height: 10px;
+    }
 }
