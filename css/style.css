@@ -99,10 +99,6 @@ header ul li:first-child {
     width: 70%;
 }
 
-.title img {
-    display: inline-block;
-}
-
 .jumbotron h1 {
     font-size: 50px;
 }
@@ -114,7 +110,11 @@ header ul li:first-child {
 }
 
 .jumbotron img {
-    width: 17%;
+    width: 100px;
+}
+
+.title img {
+    display: inline-block;
 }
 
 /* md */
@@ -162,12 +162,13 @@ main a {
     text-align: center;
 }
 
-.inner{
-    padding: 33px 10px;
+.inner-padding {
+    padding: 25px;
 }
 
-.inner .title {
+.inner {
     background-color: #fafafa;
+    padding: 40px;
 }
 
 .product h2 {
@@ -178,4 +179,42 @@ main a {
     padding: 18px 0;
     font-size: 20px;
     font-weight: 600;
+}
+
+.product a {
+    color: rgba(0, 112, 200);
+}
+
+.product a i {
+    font-size: 13px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .product h2 {
+        font-size: 25px;
+    }
+    .product p {
+        padding: 10px 0;
+        font-size: 15px;
+    }
+    .product a i {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 767px){
+    .product h2 {
+        font-size: 20px;
+    }
+    .product p {
+        padding: 15px 0;
+        font-size: 13px;
+    }
+    .product a i {
+        font-size: 8px;
+    }
+
+    .inner {
+        padding: 20px;
+    }
 }
