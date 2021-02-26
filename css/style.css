@@ -4,6 +4,17 @@ img {
     height: 100%;
 }
 
+.bg-black {
+    background-color: black;
+}
+
+.block-center {
+    position: absolute; /* il genitore deve aver position:relative */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* HEADER */
 
 /* Header Common */
@@ -14,12 +25,22 @@ img {
 
 header ul {
     list-style: none;
+    text-transform: uppercase ;
 }
 
 header ul li {
-    text-decoration: none;
-    display: inline-block;
+    display: inline-block;  
 }
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header ul li:first-child {
+    margin-left: 10px;
+}
+
 
 /* logo */
 
@@ -27,8 +48,43 @@ header ul li {
     height: 15px;
 }
 
-/* Nav Right */
+/* Nav List */
 
 .nav-right {
     text-align: right;
+}
+
+.nav-list ul li {
+    padding-left: 10px;
+}
+
+/* Languages */
+
+.languages ul li {
+    padding-left: 10px;
+    border-left: 1px solid black;
+}
+
+.languages ul li:first-child{
+    border-left: none;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url(../img/hero-bg.jpg);
+    height: 550px;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.jumbotron .title{
+    width: 70%;
+}
+
+.title img {
+    display: inline-block;
 }
