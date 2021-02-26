@@ -24,13 +24,12 @@ img {
 
 /* Header Common */
 
-.nav-top {
-    padding: 20px 20px;
+header .small-wrapper {
+    padding: 20px;
 }
 
 header ul {
     list-style: none;
-    text-transform: uppercase;
 }
 
 header ul li {
@@ -40,6 +39,9 @@ header ul li {
 header ul li a {
     text-decoration: none;
     color: black;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 24px;
 }
 
 header ul li:first-child {
@@ -52,24 +54,23 @@ header ul li:first-child {
     height: 18px;
 }
 
-/* Nav Right */
+/* Nav */
 
-/* Nav List */
-
-.nav-right {
+.nav {
     text-align: right;
-    padding-bottom: 10px;
 }
 
-.nav-list ul li, .languages ul li {
-    padding-left: 10px;
-    font-size: 13px;
+/* Menu */
+
+.menu ul li, .languages ul li {
+    margin-left: 10px;
 }
 
 /* Languages */
 
 .languages ul li {
     border-left: 1px solid black;
+    padding-left: 10px;
 }
 
 .languages ul li:first-child {
@@ -78,8 +79,8 @@ header ul li:first-child {
 
 /* Burger Menu */
 
-.burger-menu{
-font-size: 18px;
+.burger-menu {
+    font-size: 16px;
 }
 
 /* Jumbotron */
@@ -100,7 +101,7 @@ font-size: 18px;
 
 .title img {
     display: inline-block;
-    }
+}
 
 .jumbotron h1 {
     font-size: 50px;
@@ -112,16 +113,15 @@ font-size: 18px;
 }
 
 /* md */
+
 @media all and (min-width: 768px) and (max-width: 991px) {
     .jumbotron h1 {
         font-size: 35px;
     }
-    
     .jumbotron h2 {
         padding: 15px 0;
         font-size: 13px;
-    } 
-
+    }
     .logo img {
         height: 15px;
     }
@@ -133,13 +133,14 @@ font-size: 18px;
     .jumbotron h1 {
         font-size: 30px;
     }
-    
     .jumbotron h2 {
         padding: 15px 0;
         font-size: 12px;
-    } 
-
+    }
     .logo img {
         height: 10px;
+    }
+    .burger-menu {
+        font-size: 14px;
     }
 }
