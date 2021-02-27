@@ -130,6 +130,7 @@ header ul li:first-child {
     }
     .logo img {
         height: 15px;
+        width: 25%;
     }
 }
 
@@ -145,6 +146,7 @@ header ul li:first-child {
     }
     .logo img {
         height: 10px;
+        width: 30%;
     }
     .burger-menu {
         font-size: 14px;
