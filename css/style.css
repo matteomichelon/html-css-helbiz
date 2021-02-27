@@ -88,8 +88,9 @@ header ul li:first-child {
 .jumbotron {
     background-image: url(../img/hero-bg.jpg);
     height: 550px;
+    /* l'altezza deve rimanere fissa per 
+        l'immagine di sfondo */
     background-size: cover;
-    width: 100%;
     position: relative;
     color: white;
     text-align: center;
@@ -202,7 +203,7 @@ main a {
     }
 }
 
-@media all and (max-width: 767px){
+@media all and (max-width: 767px) {
     .product h2 {
         font-size: 20px;
     }
@@ -213,8 +214,27 @@ main a {
     .product a i {
         font-size: 8px;
     }
-
     .inner {
         padding: 20px;
     }
 }
+
+/* Section Phone */
+
+.phone {
+    background-image: url(../img/HelbizBanner.jpg);
+    height: 370px;
+    /* l'altezza deve rimanere fissa per 
+        l'immagine di sfondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.phone img {
+    width: 25%;
+    position: relative;
+    padding-top: 130px;
+}
+
+/* Section Work */
