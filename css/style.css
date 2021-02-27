@@ -237,4 +237,72 @@ main a {
     padding-top: 130px;
 }
 
+@media all and (min-width: 768px) and (max-width: 991px){
+    .phone img {
+        width: 25%;
+        position: relative;
+        padding-top: 200px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .phone {
+        background-position-x: -170px;
+    }
+    
+    .phone img {
+        width: 200px;
+        position: relative;
+        padding-top: 200px;
+    }
+}
+
 /* Section Work */
+
+.col_work_left, .col_work_right {
+    padding: 60px;
+}
+
+.col_work_right{
+    margin-top: 35px;
+}
+
+.col_work_left h2 {
+    font-size: 35px;
+}
+
+.col_work_right h3 {
+    font-size: 15px;
+}
+
+.col_work_right p {
+    font-size: 11px;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px){
+    
+    .col_work_right{
+        margin-top: 10px;
+    }
+    
+    .col_work_left h2 {
+        font-size: 25px;
+    }
+
+}
+
+@media all and (max-width: 767px) {
+    .col_work_left, .col_work_right {
+        padding: 0 60px;
+    }
+    
+    .col_work_right{
+        margin-top: 0;
+        padding: 0 60px 30px 60px;
+    }
+    
+    .col_work_left h2 {
+        padding: 140px 60px 30px 0;
+        font-size: 30px;
+    }
+}
