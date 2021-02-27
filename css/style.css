@@ -192,6 +192,8 @@ main a {
     font-size: 13px;
 }
 
+/* md */
+
 @media all and (min-width: 768px) and (max-width: 991px) {
     .product h2 {
         font-size: 25px;
@@ -204,6 +206,8 @@ main a {
         font-size: 10px;
     }
 }
+
+/* xs */
 
 @media all and (max-width: 767px) {
     .product h2 {
@@ -234,24 +238,27 @@ main a {
 }
 
 .phone img {
-    width: 25%;
+    width: 350px;
     position: relative;
     padding-top: 130px;
 }
 
-@media all and (min-width: 768px) and (max-width: 991px){
+/* md */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
     .phone img {
-        width: 25%;
+        width: 280px;
         position: relative;
         padding-top: 200px;
     }
 }
 
+/* xs */
+
 @media all and (max-width: 767px) {
     .phone {
         background-position-x: -170px;
     }
-    
     .phone img {
         width: 200px;
         position: relative;
@@ -265,7 +272,7 @@ main a {
     padding: 60px;
 }
 
-.col_work_right{
+.col_work_right {
     margin-top: 35px;
 }
 
@@ -281,30 +288,93 @@ main a {
     font-size: 11px;
 }
 
-@media all and (min-width: 768px) and (max-width: 991px){
-    
-    .col_work_right{
+/* md */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .col_work_right {
         margin-top: 10px;
     }
-    
     .col_work_left h2 {
         font-size: 25px;
     }
-
 }
+
+/* xs */
 
 @media all and (max-width: 767px) {
     .col_work_left, .col_work_right {
         padding: 0 60px;
     }
-    
-    .col_work_right{
+    .col_work_right {
         margin-top: 0;
-        padding: 0 60px 30px 60px;
+        padding: 0 60px 0px 60px;
     }
-    
     .col_work_left h2 {
         padding: 140px 60px 30px 0;
         font-size: 30px;
+    }
+}
+
+/* Section Mobility */
+
+.mobility .container {
+    background-image: url(../img/ScooterHelbiz-2400.jpg);
+    height: 430px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.teaser-mobility {
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.mobility .content {
+    padding: 100px 100px 100px 700px;
+}
+
+.mobility h2 {
+    font-size: 45px;
+}
+
+.mobility p {
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.mobility span {
+    font-weight: 700;
+}
+
+/* md */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .mobility .content {
+        padding: 50px 50px 50px 400px;
+    }
+    .mobility h2 {
+        font-size: 35px;
+    }
+}
+
+/* xs */
+
+@media all and (max-width: 767px) {
+    .mobility .container {
+        background-position-x: -300px;
+        background-size: cover;
+    }
+    .mobility .content {
+        padding: 100px 10px;
+    }
+    .mobility h2 {
+        font-size: 30px;
+    }
+    .mobility p, .mobility span {
+        font-size: 14px;
     }
 }
