@@ -1,8 +1,14 @@
 /* DEBUG */
 
+.debug .container {
+    height: 200px;
+    background-color: #ffc0cb;
+}
+
 .debug [class*="col-"] {
     border: 1px solid black;
     height: 100%;
+    text-align: center;
     position: relative;
 }
 

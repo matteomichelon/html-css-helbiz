@@ -52,6 +52,7 @@ header ul li:first-child {
 
 .logo img {
     height: 18px;
+    width: auto;
 }
 
 /* Nav */
