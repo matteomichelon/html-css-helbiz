@@ -112,7 +112,8 @@ header ul li:first-child {
 }
 
 .jumbotron img {
-    width: 100px;
+    width: auto;
+    height: 50px;
 }
 
 .title img {
@@ -162,10 +163,6 @@ main a {
 
 /* Section Product */
 
-.product {
-    text-align: center;
-}
-
 .inner-padding {
     padding: 25px;
 }
@@ -173,6 +170,7 @@ main a {
 .inner {
     background-color: #fafafa;
     padding: 40px;
+    text-align: center;
 }
 
 .product h2 {
